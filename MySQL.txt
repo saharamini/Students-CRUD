@@ -1,0 +1,28 @@
+/*****************************************
+* Create the students_db database
+*****************************************/
+DROP DATABASE IF EXISTS students_db;
+-- create database
+CREATE DATABASE students_db;
+USE students_db;
+
+-- create the tables
+CREATE TABLE students (
+    studentID INT(6) NOT NULL   AUTO_INCREMENT,
+    firstname VARCHAR(30) NOT NULL,
+    lastname  VARCHAR(30) NOT NULL,
+	email  VARCHAR(50),
+    PRIMARY KEY (studentID)
+);
+
+-- insert data
+insert into students (firstname, lastname, email) values ('Steven', 'Tucker', 'stucker0@sbwire.com');
+insert into students (firstname, lastname, email) values ('Mary', 'Jones', 'mjones1@github.io');
+insert into students (firstname, lastname, email) values ('Emily', 'Olson', 'eolson2@tuttocitta.it');
+insert into students (firstname, lastname, email) values ('Melissa', 'Ryan', 'mryan3@phpbb.com');
+insert into students (firstname, lastname, email) values ('Marie', 'Reid', 'mreid4@arizona.edu');
+insert into students (firstname, lastname, email) values ('Christopher', 'Chavez', 'cchavez5@cbc.ca');
+insert into students (firstname, lastname, email) values ('Michael', 'Gonzales', 'mgonzales6@telegraph.co.uk');
+insert into students (firstname, lastname, email) values ('Lori', 'Reynolds', 'lreynolds7@baidu.com');
+insert into students (firstname, lastname, email) values ('Kimberly', 'Gonzales', 'kgonzales8@cnet.com');
+insert into students (firstname, lastname, email) values ('David', 'Stewart', 'dstewart9@trellian.com');
